@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @Configuration
 public class AuthenticationHandler implements HandlerMethodArgumentResolver {
-    private JwtTokenProvider jwtTokenProvider;
+    private final JwtTokenProvider jwtTokenProvider;
 
     @Override
     public boolean supportsParameter(MethodParameter parameter) {

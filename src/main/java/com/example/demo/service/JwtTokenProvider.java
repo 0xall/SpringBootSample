@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @Component
 public class JwtTokenProvider {
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Value("${jwt.secret-key}")
     private String secretKeyString;

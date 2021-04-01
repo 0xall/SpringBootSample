@@ -10,7 +10,7 @@ import java.util.List;
 
 @Configuration
 public class InterceptConfig implements WebMvcConfigurer {
-    AuthenticationHandler authenticationHandler;
+    private final AuthenticationHandler authenticationHandler;
 
     @Autowired
     public InterceptConfig(

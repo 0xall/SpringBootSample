@@ -5,7 +5,6 @@ import lombok.Setter;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
-import java.util.Locale;
 
 public class UserDTO {
     @Getter

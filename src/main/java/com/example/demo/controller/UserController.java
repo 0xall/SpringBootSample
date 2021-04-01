@@ -18,10 +18,10 @@ import java.util.Optional;
 
 @RestController
 public class UserController {
-    JwtTokenProvider jwtTokenProvider;
-    UserRepository userRepository;
-    ModelMapper modelMapper;
-    PasswordEncoder passwordEncoder;
+    private final JwtTokenProvider jwtTokenProvider;
+    private final UserRepository userRepository;
+    private final ModelMapper modelMapper;
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
     public UserController(
